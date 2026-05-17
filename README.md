@@ -193,29 +193,8 @@ Inter font family with weights 300 to 800. Font sizes scale from 0.75rem (xs) to
 - No build step — Ship raw HTML/CSS/JS to production
 - No dependencies — Only external resource is Google Fonts
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 👤 Author
-
-**Aniroodh**
-- GitHub: [@Aniroodh1234](https://github.com/Aniroodh1234)
-
----
-
 <div align="center">
 
 **[Live Demo](https://freelancer-workspace-ui.vercel.app/)** · **[Source Code](https://github.com/Aniroodh1234/Freelancer_workspace_UI)**
-
-Made with love for freelancers everywhere.
 
 </div>
