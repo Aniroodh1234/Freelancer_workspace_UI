@@ -1,0 +1,118 @@
+/* ==============================================
+   FREELANCER WORKSPACE — Responsive
+   ============================================== */
+
+/* ── Tablet: 641px - 1024px ── */
+@media (max-width: 1024px) {
+  .sidebar { width: var(--sidebar-collapsed); }
+  .sidebar .sidebar-logo-text,
+  .sidebar .sidebar-nav-label,
+  .sidebar .sidebar-section-title,
+  .sidebar .sidebar-user-info { opacity: 0; width: 0; overflow: hidden; }
+  .sidebar-toggle-btn { display: none; }
+  .main-content { margin-left: var(--sidebar-collapsed); }
+  .page-content { padding: var(--space-5) var(--space-6); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-content { grid-template-columns: repeat(2, 1fr); }
+  .charts-grid { grid-template-columns: 1fr; }
+  .analytics-kpi { grid-template-columns: repeat(2, 1fr); }
+  .settings-layout { grid-template-columns: 1fr; }
+  .settings-nav { flex-direction: row; overflow-x: auto; border-bottom: 1px solid var(--border-soft); padding-bottom: var(--space-2); margin-bottom: var(--space-6); }
+  .chat-layout { grid-template-columns: 240px 1fr; }
+}
+
+/* ── Mobile: up to 640px ── */
+@media (max-width: 640px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: var(--sidebar-width);
+    z-index: var(--z-overlay);
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  .sidebar .sidebar-logo-text,
+  .sidebar .sidebar-nav-label,
+  .sidebar .sidebar-section-title,
+  .sidebar .sidebar-user-info { opacity: 1; width: auto; }
+  .sidebar-toggle-btn { display: none; }
+  .main-content { margin-left: 0; }
+  .mobile-menu-btn { display: flex; }
+  .topbar { padding: 0 var(--space-4); }
+  .topbar-search { display: none; }
+  .page-content { padding: var(--space-4); }
+  .page-title { font-size: var(--fs-2xl); }
+
+  /* Grids */
+  .stats-grid,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-auto { grid-template-columns: 1fr; }
+  .features-grid,
+  .testimonials-grid,
+  .pricing-grid { grid-template-columns: 1fr; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .analytics-kpi { grid-template-columns: 1fr; }
+  .charts-grid { grid-template-columns: 1fr; }
+  .footer-content { grid-template-columns: 1fr; }
+
+  /* Landing */
+  .landing-nav { padding: var(--space-3) var(--space-4); }
+  .landing-nav-links { display: none; }
+  .hero-section { padding: 100px var(--space-4) 60px; }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: var(--fs-base); }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions .btn { width: 100%; max-width: 300px; }
+  .landing-section { padding: var(--space-12) var(--space-4); }
+
+  /* Chat */
+  .chat-layout { grid-template-columns: 1fr; }
+  .chat-contacts { display: none; }
+  .chat-contacts.mobile-show { display: block; position: fixed; inset: 0; z-index: var(--z-overlay); background: var(--bg-main); }
+
+  /* Kanban */
+  .kanban-board { flex-direction: column; }
+  .kanban-column { min-width: 100%; }
+
+  /* Settings */
+  .settings-layout { grid-template-columns: 1fr; }
+  .settings-nav { flex-direction: row; overflow-x: auto; gap: var(--space-2); }
+
+  /* Buttons */
+  .btn-full-mobile { width: 100%; }
+
+  /* Tables */
+  .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Modal */
+  .modal { max-width: 100%; margin: var(--space-4); border-radius: var(--radius-md); }
+  .drawer { width: 100%; max-width: 100%; }
+
+  /* Notifications */
+  .notifications-panel { width: calc(100vw - 32px); right: -60px; }
+
+  /* Toast */
+  .toast-container { left: var(--space-4); right: var(--space-4); bottom: var(--space-4); }
+  .toast { min-width: auto; }
+
+  /* Command Palette */
+  .command-overlay { padding-top: var(--space-4); }
+  .command-palette { margin: 0 var(--space-4); max-width: calc(100vw - 32px); }
+
+  /* Timer */
+  .timer-display { font-size: 3rem; }
+  .timer-controls { flex-wrap: wrap; }
+}
+
+/* ── Large Desktop: 1280px+ ── */
+@media (min-width: 1280px) {
+  .page-content { padding: var(--space-8) var(--space-10); }
+}
