@@ -170,29 +170,6 @@ npx -y vercel --prod
 | Deployment | [Vercel](https://vercel.com) |
 | Icons | Inline SVGs |
 
-## 📐 Design System
-
-### Spacing
-8px base system (0.25rem to 6rem), ensuring consistent rhythm across all components.
-
-### Typography
-Inter font family with weights 300 to 800. Font sizes scale from 0.75rem (xs) to 2.5rem (4xl).
-
-### Border Radius
-10px (sm), 14px (md), 18px (lg), 999px (pill) — soft, modern edges throughout.
-
-### Shadows
-5-tier shadow system from sm to xl, plus glow variants using the accent purple for interactive focus states.
-
-## 📋 Architecture Constraints
-
-- No frameworks — Zero React, Vue, Angular, Svelte
-- No backend — All data is mocked in js/data.js
-- No localStorage — All state is strictly in-memory
-- No API calls — Fully offline-capable
-- No build step — Ship raw HTML/CSS/JS to production
-- No dependencies — Only external resource is Google Fonts
-
 <div align="center">
 
 **[Live Demo](https://freelancer-workspace-ui.vercel.app/)** · **[Source Code](https://github.com/Aniroodh1234/Freelancer_workspace_UI)**
