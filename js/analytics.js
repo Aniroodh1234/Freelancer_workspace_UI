@@ -41,13 +41,13 @@ const AnalyticsPage = {
   },
   renderCharts() {
     Charts.drawLineChart('revenueLineChart', AppData.analytics.revenue.map(r => ({ label: r.month, value: r.amount })), {
-      height: 280, formatLabel: v => '$' + (v / 1000).toFixed(0) + 'k', color: '#8b5cf6'
+      height: 280, formatLabel: v => '$' + (v / 1000).toFixed(0) + 'k', color: '#CF6DFC'
     });
     Charts.drawBarChart('productivityChart', AppData.analytics.productivity.map(p => ({ label: p.day, value: p.hours })), {
-      height: 280, color: '#22c55e'
+      height: 280, color: '#BDB96A'
     });
     Charts.drawBarChart('clientChart', AppData.analytics.clientActivity.map(c => ({ label: c.client.split(' ')[0], value: c.hours })), {
-      height: 280, color: '#38bdf8'
+      height: 280, color: '#C1BFFF'
     });
     Charts.drawDonutChart('taskDonut', [
       { label: 'Completed', value: AppData.tasks.filter(t => t.status === 'completed').length },

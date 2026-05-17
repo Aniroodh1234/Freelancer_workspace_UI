@@ -45,7 +45,7 @@ const DashboardPage = {
       Charts.drawBarChart('revenueChart', AppData.analytics.revenue.map(r => ({ label: r.month, value: r.amount })), {
         height: 260,
         formatLabel: v => '$' + (v / 1000).toFixed(0) + 'k',
-        color: '#8b5cf6'
+        color: '#CF6DFC'
       });
     }, 500);
   },

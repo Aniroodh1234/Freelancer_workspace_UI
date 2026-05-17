@@ -3,13 +3,13 @@
    ============================================== */
 const Charts = {
   colors: {
-    primary: '#8b5cf6',
-    secondary: '#6366f1',
-    success: '#22c55e',
-    warning: '#f59e0b',
-    info: '#38bdf8',
-    grid: 'rgba(148,163,184,0.1)',
-    text: '#94a3b8'
+    primary: '#CF6DFC',
+    secondary: '#C1BFFF',
+    success: '#BDB96A',
+    warning: '#E0C94E',
+    info: '#C1BFFF',
+    grid: 'rgba(148,144,184,0.1)',
+    text: '#9490b8'
   },
 
   drawBarChart(canvasId, data, options = {}) {
@@ -184,7 +184,7 @@ const Charts = {
         angle += slice;
       });
       ctx.beginPath(); ctx.arc(cx, cy, inner, 0, Math.PI * 2);
-      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg-card').trim() || '#1e293b';
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg-card').trim() || '#18152e';
       ctx.fill();
       if (p < 1) requestAnimationFrame(step);
     };

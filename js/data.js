@@ -12,12 +12,12 @@ const AppData = {
   },
 
   clients: [
-    { id: 'c1', name: 'Acme Corp', contact: 'Sarah Chen', email: 'sarah@acmecorp.com', phone: '+1 (415) 555-0142', status: 'active', projects: 3, totalRevenue: 42500, industry: 'Technology', initials: 'AC', color: '#8b5cf6', joinDate: '2025-03-15' },
-    { id: 'c2', name: 'Bloom Studio', contact: 'James Park', email: 'james@bloomstudio.io', phone: '+1 (212) 555-0198', status: 'active', projects: 2, totalRevenue: 28000, industry: 'Marketing', initials: 'BS', color: '#22c55e', joinDate: '2025-05-22' },
-    { id: 'c3', name: 'NovaTech', contact: 'Maria Santos', email: 'maria@novatech.dev', phone: '+1 (310) 555-0167', status: 'active', projects: 1, totalRevenue: 15800, industry: 'SaaS', initials: 'NT', color: '#38bdf8', joinDate: '2025-08-10' },
-    { id: 'c4', name: 'Craft & Co', contact: 'David Kim', email: 'david@craftco.com', phone: '+1 (503) 555-0134', status: 'inactive', projects: 1, totalRevenue: 9200, industry: 'E-commerce', initials: 'CC', color: '#f59e0b', joinDate: '2025-01-08' },
+    { id: 'c1', name: 'Acme Corp', contact: 'Sarah Chen', email: 'sarah@acmecorp.com', phone: '+1 (415) 555-0142', status: 'active', projects: 3, totalRevenue: 42500, industry: 'Technology', initials: 'AC', color: '#CF6DFC', joinDate: '2025-03-15' },
+    { id: 'c2', name: 'Bloom Studio', contact: 'James Park', email: 'james@bloomstudio.io', phone: '+1 (212) 555-0198', status: 'active', projects: 2, totalRevenue: 28000, industry: 'Marketing', initials: 'BS', color: '#BDB96A', joinDate: '2025-05-22' },
+    { id: 'c3', name: 'NovaTech', contact: 'Maria Santos', email: 'maria@novatech.dev', phone: '+1 (310) 555-0167', status: 'active', projects: 1, totalRevenue: 15800, industry: 'SaaS', initials: 'NT', color: '#C1BFFF', joinDate: '2025-08-10' },
+    { id: 'c4', name: 'Craft & Co', contact: 'David Kim', email: 'david@craftco.com', phone: '+1 (503) 555-0134', status: 'inactive', projects: 1, totalRevenue: 9200, industry: 'E-commerce', initials: 'CC', color: '#E0C94E', joinDate: '2025-01-08' },
     { id: 'c5', name: 'Zenith Labs', contact: 'Emily Wong', email: 'emily@zenithlabs.ai', phone: '+1 (650) 555-0189', status: 'active', projects: 2, totalRevenue: 36700, industry: 'AI/ML', initials: 'ZL', color: '#ef4444', joinDate: '2025-06-30' },
-    { id: 'c6', name: 'Pulse Media', contact: 'Ryan O\'Brien', email: 'ryan@pulsemedia.co', phone: '+1 (312) 555-0156', status: 'active', projects: 1, totalRevenue: 12400, industry: 'Media', initials: 'PM', color: '#6366f1', joinDate: '2025-09-14' },
+    { id: 'c6', name: 'Pulse Media', contact: 'Ryan O\'Brien', email: 'ryan@pulsemedia.co', phone: '+1 (312) 555-0156', status: 'active', projects: 1, totalRevenue: 12400, industry: 'Media', initials: 'PM', color: '#C1BFFF', joinDate: '2025-09-14' },
     { id: 'c7', name: 'Verde Health', contact: 'Lisa Tran', email: 'lisa@verdehealth.com', phone: '+1 (617) 555-0173', status: 'paused', projects: 1, totalRevenue: 18500, industry: 'Healthcare', initials: 'VH', color: '#14b8a6', joinDate: '2025-04-20' },
     { id: 'c8', name: 'Atlas Finance', contact: 'Michael Brown', email: 'michael@atlasfinance.io', phone: '+1 (202) 555-0145', status: 'active', projects: 2, totalRevenue: 54000, industry: 'Fintech', initials: 'AF', color: '#a855f7', joinDate: '2025-02-12' },
     { id: 'c9', name: 'Luminary Design', contact: 'Anna Kowalski', email: 'anna@luminary.design', phone: '+1 (720) 555-0191', status: 'active', projects: 1, totalRevenue: 8900, industry: 'Design', initials: 'LD', color: '#ec4899', joinDate: '2025-10-05' },
@@ -89,14 +89,14 @@ const AppData = {
   ],
 
   messages: [
-    { id: 'm1', contactId: 'c1', contactName: 'Sarah Chen', contactInitials: 'SC', contactColor: '#8b5cf6', messages: [
+    { id: 'm1', contactId: 'c1', contactName: 'Sarah Chen', contactInitials: 'SC', contactColor: '#CF6DFC', messages: [
       { text: 'Hi Alex! How is the homepage redesign coming along?', sent: false, time: '10:30 AM' },
       { text: 'Going great! I finished the wireframes and starting on the high-fidelity mockups today.', sent: true, time: '10:35 AM' },
       { text: 'Awesome! Can you share a preview by end of day?', sent: false, time: '10:38 AM' },
       { text: 'Absolutely, I\'ll send a Figma link by 5 PM.', sent: true, time: '10:40 AM' },
       { text: 'Perfect, looking forward to it! 🙌', sent: false, time: '10:42 AM' }
     ]},
-    { id: 'm2', contactId: 'c2', contactName: 'James Park', contactInitials: 'JP', contactColor: '#22c55e', messages: [
+    { id: 'm2', contactId: 'c2', contactName: 'James Park', contactInitials: 'JP', contactColor: '#BDB96A', messages: [
       { text: 'James, here are the three logo directions we discussed.', sent: true, time: '9:15 AM' },
       { text: 'These look incredible! The team really loves option B.', sent: false, time: '11:20 AM' },
       { text: 'Great choice! I\'ll refine option B and prepare the variations.', sent: true, time: '11:25 AM' },
@@ -111,7 +111,7 @@ const AppData = {
       { text: 'The initial user flow diagrams are ready for the mobile app.', sent: true, time: 'May 16' },
       { text: 'Thanks Alex. The product team will review this week.', sent: false, time: 'May 16' }
     ]},
-    { id: 'm5', contactId: 'c6', contactName: 'Ryan O\'Brien', contactInitials: 'RO', contactColor: '#6366f1', messages: [
+    { id: 'm5', contactId: 'c6', contactName: 'Ryan O\'Brien', contactInitials: 'RO', contactColor: '#C1BFFF', messages: [
       { text: 'Hey Ryan, just a reminder about the invoice from last month.', sent: true, time: 'May 14' },
       { text: 'Sorry about that! Processing it today.', sent: false, time: 'May 15' }
     ]}

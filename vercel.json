@@ -1,6 +1,17 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/dashboard", "destination": "/pages/dashboard.html" },
+    { "source": "/clients", "destination": "/pages/clients.html" },
+    { "source": "/projects", "destination": "/pages/projects.html" },
+    { "source": "/tasks", "destination": "/pages/tasks.html" },
+    { "source": "/invoices", "destination": "/pages/invoices.html" },
+    { "source": "/messages", "destination": "/pages/messages.html" },
+    { "source": "/time-tracker", "destination": "/pages/time-tracker.html" },
+    { "source": "/analytics", "destination": "/pages/analytics.html" },
+    { "source": "/settings", "destination": "/pages/settings.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

@@ -21,10 +21,10 @@
 .btn-primary {
   background: var(--gradient-primary);
   color: white;
-  box-shadow: 0 2px 8px rgba(139,92,246,0.25);
+  box-shadow: 0 2px 8px rgba(207,109,252,0.25);
 }
 .btn-primary:hover {
-  box-shadow: 0 4px 16px rgba(139,92,246,0.35);
+  box-shadow: 0 4px 16px rgba(207,109,252,0.35);
   transform: translateY(-1px);
 }
 .btn-secondary {
@@ -77,7 +77,7 @@
 .card-interactive:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(139,92,246,0.3);
+  border-color: rgba(207,109,252,0.3);
 }
 .card-header {
   display: flex;
@@ -169,7 +169,7 @@
   transition: all var(--transition-fast);
 }
 .input-field:hover { border-color: var(--border-default); }
-.input-field:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(139,92,246,0.15); }
+.input-field:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(207,109,252,0.15); }
 .input-field.error { border-color: var(--color-danger); }
 .input-helper { font-size: var(--fs-xs); color: var(--text-muted); margin-top: var(--space-1); }
 .input-error { font-size: var(--fs-xs); color: var(--color-danger); margin-top: var(--space-1); }
@@ -180,13 +180,13 @@ textarea.input-field { resize: vertical; min-height: 100px; }
   border-radius: var(--radius-sm); color: var(--text-primary);
   font-size: var(--fs-base); cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239490b8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
   padding-right: 36px;
   transition: all var(--transition-fast);
 }
-.select-field:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(139,92,246,0.15); }
+.select-field:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(207,109,252,0.15); }
 
 /* ── Search Input ── */
 .search-input-wrap {
@@ -199,7 +199,7 @@ textarea.input-field { resize: vertical; min-height: 100px; }
   border-radius: var(--radius-sm); color: var(--text-primary);
   font-size: var(--fs-base); transition: all var(--transition-fast);
 }
-.search-input:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(139,92,246,0.15); }
+.search-input:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(207,109,252,0.15); }
 
 /* ── Badges / Status ── */
 .badge {
@@ -207,7 +207,7 @@ textarea.input-field { resize: vertical; min-height: 100px; }
   padding: 3px 10px; font-size: var(--fs-xs); font-weight: var(--fw-medium);
   border-radius: var(--radius-pill); white-space: nowrap;
 }
-.badge-primary { background: rgba(139,92,246,0.15); color: var(--accent-primary); }
+.badge-primary { background: rgba(207,109,252,0.15); color: var(--accent-primary); }
 .badge-success { background: var(--color-success-bg); color: var(--color-success); }
 .badge-warning { background: var(--color-warning-bg); color: var(--color-warning); }
 .badge-danger { background: var(--color-danger-bg); color: var(--color-danger); }
@@ -223,7 +223,7 @@ textarea.input-field { resize: vertical; min-height: 100px; }
   transition: all var(--transition-fast);
 }
 .filter-chip:hover { border-color: var(--accent-primary); color: var(--text-primary); }
-.filter-chip.active { background: rgba(139,92,246,0.15); border-color: var(--accent-primary); color: var(--accent-primary); }
+.filter-chip.active { background: rgba(207,109,252,0.15); border-color: var(--accent-primary); color: var(--accent-primary); }
 
 /* ── Tabs ── */
 .tabs { display: flex; gap: var(--space-1); border-bottom: 1px solid var(--border-soft); margin-bottom: var(--space-6); }
@@ -408,7 +408,7 @@ textarea.input-field { resize: vertical; min-height: 100px; }
   cursor: pointer;
 }
 .notification-item:hover { background: var(--bg-hover); }
-.notification-item.unread { background: rgba(139,92,246,0.05); }
+.notification-item.unread { background: rgba(207,109,252,0.05); }
 .notification-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--accent-primary); flex-shrink: 0; margin-top: 6px;
