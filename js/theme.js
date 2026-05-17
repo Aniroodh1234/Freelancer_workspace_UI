@@ -3,14 +3,14 @@
    ============================================== */
 
 const Theme = {
-  current: 'dark',
+  current: 'light',
   init() {
     this.applyTheme(this.current);
     const toggleBtns = Utils.$$('[data-theme-toggle]');
     toggleBtns.forEach(btn => btn.addEventListener('click', () => this.toggle()));
   },
   toggle() {
-    this.current = this.current === 'dark' ? 'light' : 'dark';
+    this.current = this.current === 'light' ? 'dark' : 'light';
     this.applyTheme(this.current);
     Utils.showToast(`Switched to ${this.current} mode`, 'info');
   },
@@ -19,9 +19,9 @@ const Theme = {
     const toggleBtns = Utils.$$('[data-theme-toggle]');
     toggleBtns.forEach(btn => {
       const icon = btn.querySelector('.theme-icon');
-      if (icon) icon.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+      if (icon) icon.innerHTML = theme === 'light' ? '🌙' : '☀️';
     });
     const toggleSwitches = Utils.$$('.theme-toggle-switch');
-    toggleSwitches.forEach(s => s.classList.toggle('active', theme === 'light'));
+    toggleSwitches.forEach(s => s.classList.toggle('active', theme === 'dark'));
   }
 };
