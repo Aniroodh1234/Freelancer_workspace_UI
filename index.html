@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Workspace — Manage Clients, Projects & Invoices</title>
+  <meta name="description" content="The modern workspace for freelancers. Manage clients, projects, tasks, invoices, and analytics — all in one elegant platform.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="landing-page">
+
+  <!-- Navigation -->
+  <nav class="landing-nav" id="landingNav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="landing-nav-logo">
+      <div class="sidebar-logo-icon"><svg width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <span>Freelancer Workspace</span>
+    </a>
+    <div class="landing-nav-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="landing-nav-actions">
+      <button class="btn btn-ghost btn-sm" data-theme-toggle><span class="theme-icon">☀️</span></button>
+      <a href="dashboard.html" class="btn btn-primary btn-sm">Open Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section" id="hero">
+    <div class="hero-badge animate-fade-in">✨ Built for modern freelancers</div>
+    <h1 class="hero-title animate-fade-in-up">Your work,<br><span class="gradient-text">beautifully managed.</span></h1>
+    <p class="hero-subtitle animate-fade-in-up stagger-2">Track clients, projects, tasks, invoices and time — all in one elegant workspace designed for independent professionals.</p>
+    <div class="hero-actions animate-fade-in-up stagger-3">
+      <a href="dashboard.html" class="btn btn-primary btn-lg">Get Started Free</a>
+      <a href="#features" class="btn btn-secondary btn-lg">See Features</a>
+    </div>
+    <div class="hero-preview animate-fade-in-up stagger-4">
+      <div style="padding:40px;text-align:center;width:100%">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px;max-width:800px;margin-left:auto;margin-right:auto">
+          <div class="stat-card" style="border-top:2px solid var(--accent-primary)"><div style="font-size:24px;font-weight:700">$48.2k</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">Revenue</div></div>
+          <div class="stat-card" style="border-top:2px solid var(--color-success)"><div style="font-size:24px;font-weight:700">5</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">Active Projects</div></div>
+          <div class="stat-card" style="border-top:2px solid var(--color-info)"><div style="font-size:24px;font-weight:700">16</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">Tasks</div></div>
+          <div class="stat-card" style="border-top:2px solid var(--color-warning)"><div style="font-size:24px;font-weight:700">8</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">Clients</div></div>
+        </div>
+        <div style="height:120px;background:var(--gradient-glow);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--text-muted);max-width:800px;margin:0 auto">📊 Dashboard Preview</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="landing-section" id="features">
+    <div class="landing-section-header">
+      <h2 class="landing-section-title">Everything you need</h2>
+      <p class="landing-section-subtitle">Powerful tools designed to help freelancers stay organized and deliver exceptional work.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon" style="color:var(--accent-primary)">👥</div><h3 class="feature-title">Client Management</h3><p class="feature-desc">Keep all client information organized. Track contacts, projects, revenue, and communication history in one place.</p></div>
+      <div class="feature-card"><div class="feature-icon" style="color:var(--color-info)">📁</div><h3 class="feature-title">Project Tracking</h3><p class="feature-desc">Monitor project progress, budgets, and deadlines. Visualize milestones with progress bars and priority labels.</p></div>
+      <div class="feature-card"><div class="feature-icon" style="color:var(--color-success)">✅</div><h3 class="feature-title">Kanban Board</h3><p class="feature-desc">Drag and drop task management with a visual board. Organize work across Backlog, In Progress, Review, and Done.</p></div>
+      <div class="feature-card"><div class="feature-icon" style="color:var(--color-warning)">💳</div><h3 class="feature-title">Invoice Management</h3><p class="feature-desc">Create, track, and manage invoices with status tracking. See paid, pending, and overdue balances at a glance.</p></div>
+      <div class="feature-card"><div class="feature-icon" style="color:#ec4899">⏱</div><h3 class="feature-title">Time Tracking</h3><p class="feature-desc">Built-in timer with session tracking. Log hours per project and task for accurate billing and productivity insights.</p></div>
+      <div class="feature-card"><div class="feature-icon" style="color:#f97316">📈</div><h3 class="feature-title">Analytics</h3><p class="feature-desc">Beautiful charts and metrics to understand revenue trends, task completion rates, and client activity over time.</p></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="landing-section" id="testimonials" style="background:var(--bg-secondary);margin:0;max-width:100%;padding-left:calc((100% - 1200px)/2 + 32px);padding-right:calc((100% - 1200px)/2 + 32px)">
+    <div class="landing-section-header">
+      <h2 class="landing-section-title">Loved by freelancers</h2>
+      <p class="landing-section-subtitle">Hear from professionals who transformed their workflow.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card"><p class="testimonial-text">"This workspace completely changed how I manage my freelance business. Everything I need is in one place."</p><div class="testimonial-author"><div class="avatar" style="background:#8b5cf6">JM</div><div><div class="testimonial-name">Jessica Martinez</div><div class="testimonial-role">UX Designer</div></div></div></div>
+      <div class="testimonial-card"><p class="testimonial-text">"The Kanban board and time tracker are game changers. I bill more accurately and never miss a deadline."</p><div class="testimonial-author"><div class="avatar" style="background:#22c55e">DL</div><div><div class="testimonial-name">Daniel Lee</div><div class="testimonial-role">Full Stack Developer</div></div></div></div>
+      <div class="testimonial-card"><p class="testimonial-text">"Beautiful interface, simple to use, and the analytics help me understand my business better. Highly recommend!"</p><div class="testimonial-author"><div class="avatar" style="background:#38bdf8">SR</div><div><div class="testimonial-name">Sophia Reed</div><div class="testimonial-role">Brand Consultant</div></div></div></div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="landing-section" id="pricing">
+    <div class="landing-section-header">
+      <h2 class="landing-section-title">Simple pricing</h2>
+      <p class="landing-section-subtitle">Start free, upgrade when you need more.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-plan">Starter</div>
+        <div class="pricing-price">$0<span>/month</span></div>
+        <p class="pricing-desc">Perfect for getting started</p>
+        <ul class="pricing-features"><li>3 active projects</li><li>5 clients</li><li>Basic analytics</li><li>Time tracking</li></ul>
+        <a href="dashboard.html" class="btn btn-secondary btn-full">Get Started</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-plan">Professional</div>
+        <div class="pricing-price">$19<span>/month</span></div>
+        <p class="pricing-desc">For growing freelancers</p>
+        <ul class="pricing-features"><li>Unlimited projects</li><li>Unlimited clients</li><li>Advanced analytics</li><li>Invoice management</li><li>Priority support</li></ul>
+        <a href="dashboard.html" class="btn btn-primary btn-full">Start Free Trial</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-plan">Agency</div>
+        <div class="pricing-price">$49<span>/month</span></div>
+        <p class="pricing-desc">For teams and agencies</p>
+        <ul class="pricing-features"><li>Everything in Pro</li><li>Team collaboration</li><li>Custom branding</li><li>API access</li><li>Dedicated support</li></ul>
+        <a href="dashboard.html" class="btn btn-secondary btn-full">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="landing-section" id="faq">
+    <div class="landing-section-header">
+      <h2 class="landing-section-title">Frequently asked questions</h2>
+      <p class="landing-section-subtitle">Everything you need to know about Freelancer Workspace.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question">What is Freelancer Workspace?<span class="faq-icon">▾</span></button><div class="faq-answer"><p class="faq-answer-text">Freelancer Workspace is an all-in-one platform for freelancers to manage clients, projects, tasks, invoices, time tracking, and analytics in a single elegant interface.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Is there a free plan?<span class="faq-icon">▾</span></button><div class="faq-answer"><p class="faq-answer-text">Yes! Our Starter plan is completely free and includes core features like project management, time tracking, and basic analytics.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Can I import my existing data?<span class="faq-icon">▾</span></button><div class="faq-answer"><p class="faq-answer-text">Absolutely. We support CSV imports for clients, projects, and invoices. You can also connect via our API on the Agency plan.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Is my data secure?<span class="faq-icon">▾</span></button><div class="faq-answer"><p class="faq-answer-text">Security is our top priority. We use enterprise-grade encryption, regular security audits, and comply with GDPR and SOC 2 standards.</p></div></div>
+      <div class="faq-item"><button class="faq-question">Can I cancel anytime?<span class="faq-icon">▾</span></button><div class="faq-answer"><p class="faq-answer-text">Yes, you can cancel your subscription at any time with no questions asked. Your data will be available for export for 30 days after cancellation.</p></div></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <div class="footer-content">
+      <div>
+        <a href="index.html" class="landing-nav-logo" style="margin-bottom:var(--space-3)">
+          <div class="sidebar-logo-icon"><svg width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <span>Freelancer Workspace</span>
+        </a>
+        <p class="footer-brand-desc">The modern workspace for independent professionals. Manage your entire freelance business in one place.</p>
+      </div>
+      <div><h4 class="footer-col-title">Product</h4><div class="footer-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="dashboard.html">Dashboard</a><a href="#">Changelog</a></div></div>
+      <div><h4 class="footer-col-title">Resources</h4><div class="footer-links"><a href="#">Documentation</a><a href="#">Blog</a><a href="#">Community</a><a href="#">Support</a></div></div>
+      <div><h4 class="footer-col-title">Company</h4><div class="footer-links"><a href="#">About</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Freelancer Workspace. All rights reserved.</span>
+      <span>Crafted with care for freelancers worldwide.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Landing page inline script for FAQ accordion
+    const LandingPage = {
+      init() {
+        document.querySelectorAll('.faq-question').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            const isOpen = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isOpen) item.classList.add('active');
+          });
+        });
+      }
+    };
+  </script>
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/command-palette.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

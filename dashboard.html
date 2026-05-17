@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Freelancer Workspace</title>
+  <meta name="description" content="Your freelance business dashboard. View revenue, projects, tasks, and activity at a glance.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Sidebar -->
+    <aside class="sidebar" role="navigation" aria-label="Main navigation">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-logo">
+          <div class="sidebar-logo-icon"><svg width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <span class="sidebar-logo-text">Workspace</span>
+        </a>
+      </div>
+      <button class="sidebar-toggle-btn" aria-label="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-title"><span class="sidebar-nav-label">Main</span></div>
+        <a href="dashboard.html" class="sidebar-nav-item active"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="sidebar-nav-label">Dashboard</span></a>
+        <a href="clients.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span class="sidebar-nav-label">Clients</span></a>
+        <a href="projects.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span class="sidebar-nav-label">Projects</span></a>
+        <a href="tasks.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span class="sidebar-nav-label">Tasks</span></a>
+        <a href="invoices.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span class="sidebar-nav-label">Invoices</span></a>
+        <div class="sidebar-section-title"><span class="sidebar-nav-label">Tools</span></div>
+        <a href="messages.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="sidebar-nav-label">Messages</span></a>
+        <a href="time-tracker.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="sidebar-nav-label">Time Tracker</span></a>
+        <a href="analytics.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="sidebar-nav-label">Analytics</span></a>
+        <a href="settings.html" class="sidebar-nav-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="sidebar-nav-label">Settings</span></a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-user"><div class="sidebar-user-avatar">AR</div><div class="sidebar-user-info"><div class="sidebar-user-name">Alex Rivera</div><div class="sidebar-user-role">Freelancer</div></div></div>
+      </div>
+    </aside>
+    <div class="sidebar-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-menu-btn" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+          <h1 class="topbar-title">Dashboard</h1>
+        </div>
+        <div class="topbar-right">
+          <button class="topbar-search" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>Search...</span><kbd>⌘K</kbd></button>
+          <button class="topbar-icon-btn" data-theme-toggle aria-label="Toggle theme"><span class="theme-icon">☀️</span></button>
+          <div class="dropdown">
+            <button class="topbar-icon-btn" data-dropdown-toggle="notifPanel" aria-label="Notifications"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="badge notif-badge"></span></button>
+            <div class="notifications-panel" id="notifPanel">
+              <div class="notifications-header"><span style="font-weight:var(--fw-semibold)">Notifications</span><button class="btn btn-ghost btn-sm mark-all-read">Mark all read</button></div>
+              <div class="notifications-list"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <div class="welcome-header">
+          <h2 class="welcome-title">Good evening, Alex 👋</h2>
+          <p class="welcome-subtitle">Here's what's happening with your projects today.</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid"></div>
+
+        <!-- Main Grid -->
+        <div class="dashboard-grid">
+          <div>
+            <!-- Revenue Chart -->
+            <div class="chart-panel mb-6">
+              <div class="card-header"><h3 class="card-title">Revenue Overview</h3></div>
+              <canvas id="revenueChart"></canvas>
+            </div>
+            <!-- Recent Projects -->
+            <div class="card mb-6">
+              <div class="card-header"><h3 class="card-title">Recent Projects</h3><a href="projects.html" class="btn btn-ghost btn-sm">View all</a></div>
+              <div class="recent-projects-list"></div>
+            </div>
+          </div>
+          <div>
+            <!-- Activity Timeline -->
+            <div class="card mb-6">
+              <div class="card-header"><h3 class="card-title">Recent Activity</h3></div>
+              <div class="activity-timeline timeline"></div>
+            </div>
+            <!-- Upcoming Deadlines -->
+            <div class="card mb-6">
+              <div class="card-header"><h3 class="card-title">Upcoming Deadlines</h3></div>
+              <div class="upcoming-deadlines"></div>
+            </div>
+            <!-- Quick Actions -->
+            <div class="card">
+              <h3 class="card-title mb-4">Quick Actions</h3>
+              <div class="quick-actions">
+                <a href="tasks.html" class="btn btn-secondary btn-sm">+ New Task</a>
+                <a href="invoices.html" class="btn btn-secondary btn-sm">+ Invoice</a>
+                <a href="clients.html" class="btn btn-secondary btn-sm">+ Client</a>
+                <a href="time-tracker.html" class="btn btn-secondary btn-sm">⏱ Track Time</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Command Palette -->
+  <div class="command-overlay" role="dialog" aria-label="Command palette">
+    <div class="command-palette">
+      <div class="command-input-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" class="command-input" placeholder="Type a command or search..." aria-label="Command search"></div>
+      <div class="command-list"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/command-palette.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
