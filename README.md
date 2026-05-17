@@ -172,6 +172,6 @@ npx -y vercel --prod
 
 <div align="center">
 
-**[Live Demo](https://freelancer-workspace-ui.vercel.app/)** · **[Source Code](https://github.com/Aniroodh1234/Freelancer_workspace_UI)**
+**[Live Demo](https://freelancer-workspace.vercel.app/)** · **[Source Code](https://github.com/Aniroodh1234/Freelancer_workspace_UI)**
 
 </div>
